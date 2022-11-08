@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --GrayishBlue: hsl(237, 18%, 59%);
+    --SoftRed: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --DarkDesaturatedBlue: hsl(236, 21%, 26%);
+    --VeryDarkBlue: hsl(235, 16%, 14%);
+    --VeryDarkMostlyBlackBlue: hsl(234, 17%, 12%);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-stars.svg);
+    background-size: cover;
+    gap: 60px;
+    background-position: center;
+    background-color: var(--VeryDarkMostlyBlackBlue);
+}
+h1{
+    text-transform: uppercase;
+    color: var(--White);
+    font-family: 'Red Hat Text';
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    max-width: 400px;
+}
+.counter{
+    display: grid;
+    grid-template-areas: 
+       "days hours minutes seconds"
+    ;
+    grid-auto-rows: 90px auto;
+    gap: 15px;
+}
+.box{
+    min-width: 90px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkDesaturatedBlue);
+}
+.box > p {
+    color: var(--SoftRed);
+    font-family: 'Red Hat Text';
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.days, .hours, .minutes, .seconds{
+    text-align: center;
+}
+.days{
+    grid-area: "days";
+}
+.tags{
+    color: var(--GrayishBlue);
+    font-family: 'Red Hat Text';
+    font-weight: bold;
+    font-size: small;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.hours{
+    grid-area: "hours";
+}
+.minutes{
+    grid-area: "minutes";
+}
+.seconds{
+    grid-area: "seconds";
+}
+.socials{
+   
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   background: url(./images/pattern-hills.svg);
+   background-size: cover;
+   background-position: right;
+   background-repeat: no-repeat;
+   flex-direction: column;
+   bottom: 0;
+   min-height: 200px;
+   background-color: var(--VeryDarkMostlyBlackBlue);
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    min-width: 100vw;
+}
+.links > a > img:hover{
+    color: var(--SoftRed);
+} 
+@media screen and (min-width:500px) {
+    h1{
+        text-align: center;
+        max-width: 500px;
+        font-size: x-large;
+    }
+    .counter{
+        gap: 30px;
+    }   
+}
