@@ -104,7 +104,9 @@ h1{
 }
 .links > a > img:hover{
     color: var(--SoftRed);
-} 
+}
+
+
 @media screen and (min-width:500px) {
     h1{
         text-align: center;
