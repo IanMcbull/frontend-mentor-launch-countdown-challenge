@@ -26,8 +26,8 @@ let x = setInterval(function() {
 
     // If the count down is over, write some text 
     if (distance < 0) {
-        clearInterval(x);
-        
+        clearInterval(x); 
+        document.querySelector(".counter").style.color = "#fff";;       
         document.querySelector(".counter").innerHTML = "EXPIRED";
     }
 }
