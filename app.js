@@ -1,7 +1,7 @@
 // Implemting the counter that starts from 14 days
 // The first thing we need to do is set the date we are counting down to
 
-var countDownDate = new Date("Nov 24, 2022 15:37:25").getTime();
+let countDownDate = new Date("Nov 26, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {
